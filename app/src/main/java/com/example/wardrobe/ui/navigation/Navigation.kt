@@ -35,11 +35,11 @@ fun Navigation(context: Context, navController: NavHostController = rememberNavC
                     navigation = navController)
             }
 
-            composable(Routes.AddPrenda.route) {
-                //AddPrendaScreen(
-                   // auth = authManager,
-                   // navigation = navController
-                //)
+            composable(Routes.SignUp.route) {
+                SignUpScreen(
+                    auth = authManager,
+                    navigation = navController
+                )
             }
         }
     }
